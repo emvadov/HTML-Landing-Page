@@ -46,7 +46,7 @@ button:hover {
 /* HEADER */
 
 header {
-    height: 115px;
+    height: auto;
     background-color: #efefef;
     box-shadow: 0 4px 2px -2px #d7d7d7;
     position: sticky;
@@ -56,6 +56,12 @@ header {
     display: block;
     z-index: 99;
    
+}
+
+.header-container {
+    overflow: hidden;
+    
+    
 }
 
 .header-upper {
@@ -81,6 +87,9 @@ header {
 
 .main-menu {
     float: right;
+    height: auto;
+    display: flex;
+    
 }
 
 .main-menu ul {
@@ -114,14 +123,21 @@ header {
 /* SUB MENU */
 
 .sub-menu {
-    margin: 0;
+    height: auto;
+    
+    
+    margin-bottom: 5px;
     padding: 0;
+    margin: auto;
 }
 
 .sub-menu ul {
+    
     justify-content: center;
     display: flex;
-    margin: auto;
+    
+    
+  
 
 }
 
@@ -135,7 +151,7 @@ header {
     color: #9000fe;
     display: inline;
     border-bottom: 1px solid #9000fe; 
-    padding-bottom: 11px;
+    padding-bottom: 14px;
     
 }
 
@@ -501,7 +517,68 @@ td img {
 
 /* RESPONSIVE STYLE */
 
+
 @media screen and (max-width: 1304px) {
+
+    header {
+        height: auto;
+        position: relative;
+        
+
+       
+    }
+
+    .header-container {
+        width: 70%;
+        margin: auto;
+        
+        
+    }
+
+    .section-one-table td {
+        padding: 10px 70px;
+        
+    }
+
+    td img {
+        width: 12%;
+        
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .header-bottom {
+        height: 785px;
+    }
+    .header-bottom-element {
+        width: 100%;
+		
+        
+    }
+
+    .element-icon img {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: auto;
+    }
+
+    .footer-menu-col  {
+        float: left;
+        width: 50%;
+        
+    }
+
+    .sub-menu a:hover {
+        border-bottom: none;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 800px) {
     
     /* HEADER */
     header {
@@ -575,30 +652,9 @@ td img {
 
     /* FOOTER */
 
-    .footer-menu-col  {
-        float: left;
-        width: 50%;
-        
-    }
+    
 
-    .section-one-table td {
-        padding: 10px 70px;
-        
-    }
-
-    td img {
-        width: 12%;
-        
-    }
-}
-
-
- 
-/*
-
-@media screen and (max-width: 800px) {
-   
-   
+    
 }
 
 
@@ -606,4 +662,3 @@ td img {
 @media screen and (max-width: 600px) {
 
 }
-*/
