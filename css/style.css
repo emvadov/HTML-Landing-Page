@@ -661,4 +661,14 @@ td img {
 
 @media screen and (max-width: 600px) {
 
+    .section-one-table td {
+        padding: 5px 35px;
+        
+    }
+
+    td img {
+        width: 6%;
+        
+    }
+
 }
